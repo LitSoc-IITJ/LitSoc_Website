@@ -1,0 +1,49 @@
+/* Fandom.css */
+
+@font-face {
+    font-family: "Action Comics Black";
+    src: url('../../media/fonts/Action Comics Black.ttf') format('truetype');
+  }
+
+.body{
+    font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum 
+  viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+}
+
+  .fandom-mainpage-text {
+    display: flex;
+    align-items: start; /* Center the content vertically */
+    font-family: "Quella", sans-serif, Arial;
+    font-size: 3vw;
+  }
+  
+  .fandom-decor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .fandom-mainpage-logo {
+    margin-right: 0px; /* Add some spacing between the image and the text */
+  }
+
+
+  
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 768px) {
+    /* Adjust flex-direction for smaller screens */
+    .fandom-mainpage {
+      flex-direction: column;
+      align-items: center; /* Center the content horizontally on smaller screens */
+    }
+  
+    .fandom-mainpage-logo {
+      margin-right: 0px; /* Reset margin for the image on smaller screens */
+      margin-bottom: 10px; /* Add some spacing between the image and the text on smaller screens */
+    }
+
+    .fandom-mainpage-2hu {
+        visibility: hidden;
+    }
+  }
+  

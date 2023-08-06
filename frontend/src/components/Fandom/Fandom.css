@@ -1,0 +1,60 @@
+/* src/fonts.css */
+
+@font-face {
+  font-family: 'Action Comics Black';
+  src: url('../../media/fonts/Action Comics Black.ttf') format('truetype');
+}
+
+.body{
+  font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum 
+viewport width]) / ([maximum viewport width] - [minimum viewport width])));
+}
+
+.fandom-main {
+  display: grid;
+  grid-template-rows: 1fr; /* Use only one row that takes the entire available height */
+}
+
+  
+   /* .fandom-nav-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 5px;
+    padding-top: 5px;
+  } */
+
+
+  
+  .fandom-mainpage {
+    display: grid;
+    grid-template-columns: 1fr; 
+    padding-left: 5px;
+    padding-top: 5px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 50%, rgb(0, 0, 0, 0.7)),
+    url("../../media/fandom/fandombg2.jpg");
+    width: 100vw; /* Set the height to the full viewport height */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Action Comics Black", "Times New Roman", Times, serif;
+  }
+  
+
+  .fandom-teams{
+    width: 100%;
+    background-image: url("../../media/fandom/fandombg2.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+  }
+
+  
+  .fandom-timeline{
+    width: 100%;
+    background-color: rgb(116, 216, 116);
+    background-image: url("../../media/fandom/timelinebg.jpg");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+} 
+

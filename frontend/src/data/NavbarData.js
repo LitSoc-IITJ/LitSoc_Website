@@ -102,6 +102,12 @@ export const navPanelItems = [
         title: "LIBRARY",
         path: "/library",
         dropdown: [],
-    }   
+    },  
+    {
+        index: 8,
+        title: "OTACON",
+        path: "/fandom",
+        dropdown: [],
+    }
 ]
 

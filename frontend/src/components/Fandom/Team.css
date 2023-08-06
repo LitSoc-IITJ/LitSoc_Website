@@ -1,0 +1,139 @@
+@font-face {
+    font-family: "Quella";
+    src: url('../../media/fonts/Quella-4BO2p.ttf') format('truetype');
+  }
+
+.fandom-teams-container {
+    width: 100vw;
+    margin: 0 auto;
+    background-image: url("../../media/fandom/kiminonawa.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  body {
+    background-color: #000;
+    font-family: "Quella","Fira Sans", sans-serif;
+  }
+  
+  .fandom-teams-card {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 50px 0;
+  }
+  
+  .fandom-teams-content {
+    flex-basis: calc(33.33333% - 30px);
+    margin: 0 15px 30px;
+    overflow: hidden;
+    border-radius: 28px;
+  }
+  
+  .fandom-teams-content-link {
+    display: block;
+    padding: 30px 20px;
+    background: rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .fandom-teams-content-link:hover,
+  .fandom-teams-content-link:hover .fandom-teams-content-date {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .fandom-teams-content-link:hover .fandom-teams-content-bg {
+    transform: scale(10);
+  }
+  
+  .fandom-teams-content-title {
+    min-height: 87px;
+    margin: 0 0 25px;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+    z-index: 2;
+    position: relative;
+  }
+  
+  .fandom-teams-content-venue {
+    font-size: 18px;
+    color: #fff;
+    z-index: 2;
+    position: relative;
+  }
+  
+  .fandom-teams-content-date {
+    font-weight: bold;
+    color: #f9b234;
+    transition: color 0.5s ease;
+  }
+  
+  .fandom-teams-content-bg {
+    height: 128px;
+    width: 128px;
+    background-color: #f9b234;
+    z-index: 1;
+    position: absolute;
+    top: -75px;
+    right: -75px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+  }
+  
+  .fandom-teams-content:nth-child(2n) .fandom-teams-content-bg {
+    background-color: #3ecd5e;
+  }
+  
+  .fandom-teams-content:nth-child(3n) .fandom-teams-content-bg {
+    background-color: #e44002;
+  }
+  
+  .fandom-teams-content:nth-child(4n) .fandom-teams-content-bg {
+    background-color: #952aff;
+  }
+  
+  .fandom-teams-content:nth-child(5n) .fandom-teams-content-bg {
+    background-color: #cd3e94;
+  }
+  
+  .fandom-teams-content:nth-child(6n) .fandom-teams-content-bg {
+    background-color: #4c49ea;
+  }
+  
+  @media only screen and (max-width: 979px) {
+    .fandom-teams-content {
+      flex-basis: calc(50% - 30px);
+    }
+    .fandom-teams-content-title {
+      font-size: 24px;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .fandom-teams-container {
+      width: 96%;
+    }
+  }
+  
+  @media only screen and (max-width: 639px) {
+    .fandom-teams-content {
+      flex-basis: 100%;
+    }
+    .fandom-teams-content-title {
+      min-height: 72px;
+      line-height: 1;
+      font-size: 24px;
+    }
+    .fandom-teams-content-link {
+      padding: 22px 40px;
+    }
+    .fandom-teams-content-date {
+      font-size: 16px;
+    }
+  }
+  
