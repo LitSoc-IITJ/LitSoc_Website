@@ -2,7 +2,8 @@ import axios from 'axios'
 import { getToken } from '../utilities/localStorage';
 
 
-const url = 'http://43.205.210.171/'
+// const url = 'https://litiitjb.litsoc.live/'
+const url = 'http://127.0.0.1:8000/'
 
 export default getQuotes;
 
